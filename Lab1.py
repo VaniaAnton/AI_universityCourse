@@ -31,9 +31,15 @@ for i in sorted_indices:
     word = terms[i]
     if word not in top_10_words:  # Ensure the word is unique
         top_10_words.append(word)
+<<<<<<< HEAD
 # Make sure there are only 10 unique words
 top_10_words = top_10_words[:10]
 
+=======
+
+# Make sure there are only 10 unique words
+top_10_words = top_10_words[:10]
+>>>>>>> origin/main
 # Search function to find relevant articles based on user input
 def search_articles(query):
     query_vec = vectorizer.transform([query])  # Convert query into vector
@@ -54,6 +60,11 @@ def search_articles(query):
         articles_info.append(article)
     return articles_info
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> origin/main
 # Tkinter GUI
 class CryptoNewsApp:
     def __init__(self, root):
@@ -61,7 +72,11 @@ class CryptoNewsApp:
         self.root.title("Crypto News Search System")
         
         # Labels
+<<<<<<< HEAD
         self.keyword_group_label = Label(root, text="Top 10 Usefull Words for Search")
+=======
+        self.keyword_group_label = Label(root, text="Top 10 Important Words for Search")
+>>>>>>> origin/main
         self.keyword_group_label.pack()
         
         # Display top 10 words
@@ -102,6 +117,10 @@ class CryptoNewsApp:
         self.search_results_text.config(state='disabled')
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
 # Run the application
 if __name__ == "__main__":
     root = Tk()
